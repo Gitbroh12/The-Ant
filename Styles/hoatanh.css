@@ -7,4 +7,22 @@ html {
 /* khôi phục cỡ chữ mặc định theo rem */
 body {
   font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  gap: 8px var(--sds-size-space-200);
+  flex: 1 0 0;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.tag {
+  padding: 20px;
+  text-decoration: none;
+}
+h1 {
+  justify-content: center;
 }
