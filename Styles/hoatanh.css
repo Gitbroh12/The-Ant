@@ -1,28 +1,160 @@
-* {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-html {
-  font-size: 62.5%;
-}
-/* khôi phục cỡ chữ mặc định theo rem */
-body {
-  font-size: 1.6rem;
-  font-family: "Roboto", sans-serif;
-}
+
 header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  align-content: center;
-  gap: 8px var(--sds-size-space-200);
-  flex: 1 0 0;
-  flex-wrap: wrap;
-  margin: 20px;
-}
-.tag {
+  background-color: #f8f9fa;
   padding: 20px;
-  text-decoration: none;
+  text-align: center;
 }
-h1 {
+
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.header h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #6c757d;
+}
+
+.but {
+  margin-top: 20px;
+}
+
+.but {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.image-placeholder {
+  margin: 20px 0;
+}
+
+.image-placeholder img {
+  max-width: 100%;
+  height: auto;
+}
+
+.quotes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.quote {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 calc(25% - 40px);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-column h3 {
+  margin-top: 0;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 5px 0;
+}
+.but {
+  text-decoration: none;
+  color: #454a91;
+}
+
+.navbar {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-in {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+}
+
+.register {
+  background-color: #000;
+  color: #fff;
+}
+
+.content {
+  padding-top: 60px; /* Adjust this value based on the height of your navbar */
 }
